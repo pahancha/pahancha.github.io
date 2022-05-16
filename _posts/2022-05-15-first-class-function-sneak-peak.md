@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sneak Peark to First Class Functions
+title: Sneak Peak to First Class Functions
 tags: [Programming, JavaScript, Under The Hood]
 excerpt_separator: <!--more-->
 permalink: /:categories/:title:output_ext
