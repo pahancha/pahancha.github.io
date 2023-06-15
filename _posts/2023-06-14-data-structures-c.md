@@ -26,7 +26,7 @@ As usually accessing those elements is possible via element's index.
 printf("%d", array[2])
 ```
 
-In C, there is no built-in way to remove an element from an array. Arrays in C are static meaning that the size is fized at the time of declaring the array. 
+In C, there is no built-in way to remove an element from an array. Arrays in C are static meaning that the size is fixed at the time of declaring the array. 
 
 ### Structures
 
@@ -103,7 +103,7 @@ ptr = &var;
 
 ### Bit Fields
 
-Bit fields allow the packing of data in a structure. This is especially useful when memory is limited. As mentioned earlier, the bit field is declared as a structure, where the number of bits used for each element is specified.
+Bit fileds allow the packing of data in a structure. This is especially useful when memory is limited. As mentioned earlier, bit field is declared as a structure, where the number of bits used for each element is specified. 
 
 ```c
 struct BitField {
@@ -114,7 +114,7 @@ struct BitField {
 };
 ```
 
-As we can see, the basic low-level data structures in c involve memory, not like other high-level programming languages. Even though there is a learning curve, learning data structures in C allows us to explore the inner behavior of data structures and helps us understand them in a better and clearer way.
+As we can see, the basic low level data structures in c, involves memory not like other high-level programming languages. Even though there is a learning curve, learning data structures in C, allows to explore the inner behaviour of data structures and helps to understand them in a better and clearer way. 
 
 
 
