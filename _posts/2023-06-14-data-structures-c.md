@@ -10,7 +10,7 @@ Arrays, Structures Unions, Enums, Pointers and Bit Fields in C language.
 
 <!--more-->
 
-As I began revising data structures, my curiosity led me towards the C language and its inherent data types and structures. Unlike high-level programming languages, C doesn't offer built-in data structures such as dynamic arrays, linked lists, hash tables/maps, stacks, or queues. Instead, it provides some basic yet powerful low-level data structures. The purpose of this post is to discuss these data structures in a brief yet informative manner.
+As I began revising data structures, my curiosity led me toward the C language and its inherent data types and structures. Unlike high-level programming languages, C doesn't offer built-in data structures such as dynamic arrays, linked lists, hash tables/maps, stacks, or queues. Instead, it provides some basic yet powerful low-level data structures. The purpose of this post is to discuss these data structures in a brief yet informative manner.
 
 
 ### Arrays
