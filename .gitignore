@@ -9,9 +9,6 @@ Thumbs.db
 # IDE files
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
 
 # Hugo modules
 hugo_cache/
