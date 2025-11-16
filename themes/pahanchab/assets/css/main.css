@@ -81,6 +81,27 @@ footer {
 a {
   color: var(--link);
   text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:focus {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .navigation-menu {
@@ -94,10 +115,18 @@ a {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
 }
 
 .navigation-menu a:hover {
-  color: var(--primary);
+  color: var(--link);
+}
+
+.navigation-menu a:focus {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 .navigation-menu a.active {
@@ -111,10 +140,22 @@ a {
   cursor: pointer;
   padding: 0;
   color: var(--text);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 #theme-toggle:hover {
-  opacity: 0.8;
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+#theme-toggle:focus {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+#theme-toggle:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .about-header-frame {
@@ -195,8 +236,43 @@ a {
   margin-bottom: 1rem;
 }
 
+/* Reading time and git info styling */
+.reading-time {
+  color: #666;
+  font-size: 0.9em;
+  font-variant-numeric: tabular-nums;
+}
+
+[data-theme="dark"] .reading-time {
+  color: #999;
+}
+
+.git-info,
+.build-time {
+  font-size: 0.85em;
+  color: #999;
+}
+
+.git-info a {
+  color: #999;
+  font-family: monospace;
+}
+
+.git-info a:hover {
+  color: var(--link);
+}
+
+[data-theme="dark"] .git-info,
+[data-theme="dark"] .build-time {
+  color: #666;
+}
+
+[data-theme="dark"] .git-info a {
+  color: #666;
+}
+
 /* Add transition to elements that change color */
-body, a, button, .navigation-menu a, .post-title-date, .post-summary-content p {
+body, button {
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -209,7 +285,6 @@ body, a, button, .navigation-menu a, .post-title-date, .post-summary-content p {
 
 /* Style inline code */
 code { 
-  background-color: var(--background);
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   font-family: monospace;

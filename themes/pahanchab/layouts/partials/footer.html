@@ -1,1 +1,7 @@
-<p>pahancha {{ now.Year }}. this blog and the theme are opensource! <3 </p>
+<p>
+  pahancha {{ now.Year }}. this blog and the theme are opensource! <3
+  {{ with .GitInfo }}
+    <span class="git-info"> · <a href="https://github.com/pahancha/pahancha.github.io/commit/{{ .Hash }}" target="_blank" rel="noopener" title="Latest commit: {{ .Subject }}">{{ substr .Hash 0 7 }}</a></span>
+  {{ end }}
+  <span class="build-time"> · Built {{ now.Format "Jan 2, 2006" }}</span>
+</p>
